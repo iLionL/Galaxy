@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy</title>
+    <link type="image/png" sizes="120x120" rel="icon" href="./images/gF1.png">
+    <link rel="stylesheet" href="all.css">
+</head>
+<style>
+    .thumb {
+      height: 75px;
+      border: 1px solid #000;
+      margin: 10px 5px 0 0;
+    }
+  </style>
+<body>
+    <div id="canvas_container"></div>
+
+    <button id="full">Go Fullscreen</button>
+    <input style="display: block; position: absolute; top: 20%; left: 80%;" type="file" id="files" name="files[]" multiple />
+    <output  style="width: 30px; height: 40px; display: block; position: absolute; top: 40%; left:80%;" id="list"></output>
+
+    <!-- <input onchange="showFile(this)" id="upload" type="file" style="display: block; position: absolute; top: 20%; left: 80%;">asd</input> -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.121.1/examples/js/controls/OrbitControls.js"></script>
+<script src="app.js"></script>
+
+    
+</body>
+</html>
